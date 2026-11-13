@@ -331,7 +331,7 @@ export default function Overlay({ ready }) {
             </h2>
           </div>
           <ul className="groups" onMouseLeave={() => pickGroup(null)}>
-            {Object.entries(GROUPS).map(([g, ws], i) => (
+            {Object.entries(GROUPS).map(([g], i) => (
               <li key={g} style={{ transitionDelay: `${0.15 + i * 0.06}s` }}>
                 <button
                   type="button"
@@ -341,7 +341,6 @@ export default function Overlay({ ready }) {
                 >
                   <span className="mono dim gi">0{i + 1}</span>
                   <span className="gname">{g}</span>
-                  <span className="mono dim">{ws.length}</span>
                 </button>
               </li>
             ))}
@@ -366,16 +365,13 @@ export default function Overlay({ ready }) {
             className="tw-label"
             ref={(el) => (store.labels.towers[i] = el)}
           >
-            <span className="tw-val">
-              <span className="tw-num">0</span>
-              <span className="tw-suf">{s.suffix}</span>
-            </span>
+            <span className="tw-val">{s.title}</span>
             <span className="mono dim">{s.label}</span>
           </span>
         ))}
       </div>
 
-      {/* NUMBERS / STACK BREAKDOWN */}
+      {/* CORE PILLARS */}
       {P(
         'numbers',
         I.numbers,
@@ -384,7 +380,7 @@ export default function Overlay({ ready }) {
           <div className="nb-head">
             <span className="mono dim">(04)</span>
             <h2 className="big">
-              <Words text="Stack *Depth*" />
+              <Words text="Core *Pillars*" />
             </h2>
           </div>
           <div className="honors">

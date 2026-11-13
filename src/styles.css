@@ -438,7 +438,7 @@ html.has-cursor * {
 .group {
   width: 100%;
   display: grid;
-  grid-template-columns: 2.8rem 1fr auto;
+  grid-template-columns: 2.8rem 1fr;
   align-items: center;
   padding: 1.05rem 0;
   background: none;

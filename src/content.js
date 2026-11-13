@@ -38,10 +38,10 @@ export const PROJECTS = [
 ];
 
 export const STATS = [
-  { label: 'Languages', value: 5, suffix: '', h: 3.4 },
-  { label: 'Web & DB', value: 5, suffix: '', h: 3.4 },
-  { label: 'Tools & OS', value: 6, suffix: '', h: 4.1 },
-  { label: 'Server Ops', value: 10, suffix: '', h: 5.0 },
+  { label: 'OOP · Backend', title: 'Java', h: 3.8 },
+  { label: 'HTML · CSS · JS · PHP', title: 'Web', h: 4.2 },
+  { label: 'MySQL · PostgreSQL', title: 'DBMS', h: 3.6 },
+  { label: 'Linux · AWS EC2 · DNS', title: 'Cloud', h: 4.8 },
 ];
 
 export const JOURNEY = [

@@ -54,9 +54,6 @@ export default function Towers() {
         const y = (-v.y * 0.5 + 0.5) * size.height;
         el.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -100%)`;
         el.style.opacity = v.z > 1 ? '0' : String(sv * clamp(k * 1.4));
-        const num = el.querySelector('.tw-num');
-        const val = Math.round(st.value * k);
-        if (num && num.textContent !== String(val)) num.textContent = String(val);
       }
     });
   });
