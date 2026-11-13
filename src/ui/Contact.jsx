@@ -13,6 +13,11 @@ const Icons = {
       <path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 0 0 5 5l1.3-2 4 1.6V17a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2Z" />
     </svg>
   ),
+  github: (
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+    </svg>
+  ),
   arrow: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
       <path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14" />
@@ -101,6 +106,14 @@ export default function Contact() {
             label={`Call ${CONTACT.phone}`}
           >
             {Icons.phone}
+          </Magnetic>
+          <Magnetic
+            as="a"
+            href={CONTACT.github}
+            className="soc"
+            label="GitHub Repository"
+          >
+            {Icons.github}
           </Magnetic>
           <div className="ct-meta">
             <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>

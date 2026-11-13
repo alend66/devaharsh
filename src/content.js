@@ -78,6 +78,7 @@ export const CONTACT = {
   email: 'devaharsh14@gmail.com',
   phone: '+91 9447783643',
   phoneHref: 'tel:+919447783643',
+  github: 'https://github.com/alend66/devaharsh',
   location: 'Pathanamthitta, Kerala',
 };
 
